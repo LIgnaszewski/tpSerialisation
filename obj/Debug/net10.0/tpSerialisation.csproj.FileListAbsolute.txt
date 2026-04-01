@@ -1,0 +1,15 @@
+C:\Users\lignaszewski\Documents\TP Orienté Objet\tpSerialisation\bin\Debug\net10.0\tpSerialisation.exe
+C:\Users\lignaszewski\Documents\TP Orienté Objet\tpSerialisation\bin\Debug\net10.0\tpSerialisation.deps.json
+C:\Users\lignaszewski\Documents\TP Orienté Objet\tpSerialisation\bin\Debug\net10.0\tpSerialisation.runtimeconfig.json
+C:\Users\lignaszewski\Documents\TP Orienté Objet\tpSerialisation\bin\Debug\net10.0\tpSerialisation.dll
+C:\Users\lignaszewski\Documents\TP Orienté Objet\tpSerialisation\bin\Debug\net10.0\tpSerialisation.pdb
+C:\Users\lignaszewski\Documents\TP Orienté Objet\tpSerialisation\obj\Debug\net10.0\tpSerialisation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lignaszewski\Documents\TP Orienté Objet\tpSerialisation\obj\Debug\net10.0\tpSerialisation.AssemblyInfoInputs.cache
+C:\Users\lignaszewski\Documents\TP Orienté Objet\tpSerialisation\obj\Debug\net10.0\tpSerialisation.AssemblyInfo.cs
+C:\Users\lignaszewski\Documents\TP Orienté Objet\tpSerialisation\obj\Debug\net10.0\tpSerialisation.csproj.CoreCompileInputs.cache
+C:\Users\lignaszewski\Documents\TP Orienté Objet\tpSerialisation\obj\Debug\net10.0\tpSerialisation.sourcelink.json
+C:\Users\lignaszewski\Documents\TP Orienté Objet\tpSerialisation\obj\Debug\net10.0\tpSerialisation.dll
+C:\Users\lignaszewski\Documents\TP Orienté Objet\tpSerialisation\obj\Debug\net10.0\refint\tpSerialisation.dll
+C:\Users\lignaszewski\Documents\TP Orienté Objet\tpSerialisation\obj\Debug\net10.0\tpSerialisation.pdb
+C:\Users\lignaszewski\Documents\TP Orienté Objet\tpSerialisation\obj\Debug\net10.0\tpSerialisation.genruntimeconfig.cache
+C:\Users\lignaszewski\Documents\TP Orienté Objet\tpSerialisation\obj\Debug\net10.0\ref\tpSerialisation.dll
