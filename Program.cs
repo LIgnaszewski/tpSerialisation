@@ -23,5 +23,8 @@ class Program
         gestionsJeux.Afficher();
 
         gestionsJeux.SauverXml("C:\\Users\\lignaszewski\\Documents\\TP Orienté Objet\\tpSerialisation\\Jeux.xml");
+        gestionsJeux.ChargerXml("C:\\Users\\lignaszewski\\Documents\\TP Orienté Objet\\tpSerialisation\\Jeux.xml");
+        Console.WriteLine("-----------------------| APRES LE CHARGEMENT XML |------------------------");
+        gestionsJeux.Afficher();
     }
 }

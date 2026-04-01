@@ -77,5 +77,16 @@ public class GestionJeux
         xs.Serialize(writer, jeuvideos);
         writer.Close();
     }
+
+    public void ChargerXml(string filePath)
+    {
+        if (File.Exists(filePath))
+        {
+            XmlSerializer xs = new XmlSerializer(typeof(List<Jeuvideo>));
+            StreamReader reader = new StreamReader(filePath);
+            jeuvideos = (List<Jeuvideo>)xs.Deserialize(reader);
+            reader.Close();
+    }
+    }
     
 }
