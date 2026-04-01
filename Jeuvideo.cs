@@ -1,3 +1,4 @@
+using System.IO;
 class Jeuvideo
 {
     protected string titre;

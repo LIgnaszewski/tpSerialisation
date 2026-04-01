@@ -1,3 +1,4 @@
+using System.IO;
 class GestionJeux
 {
     protected List<Jeuvideo> jeuvideos;
@@ -38,5 +39,17 @@ class GestionJeux
         {
             Console.WriteLine($" - {g.Titre} | {g.Studio} | {g.Prix}€");
         }
+    }
+
+    public void SauverCSV(string filePath)
+    {
+        StreamWriter writer = new StreamWriter(filePath);
+        foreach (Jeuvideo g in jeuvideos)
+        {
+            writer.WriteLine(g.Titre + ";" +
+            g.Studio + ";" +
+            g.Prix);
+        }
+        writer.Close();
     }
 }

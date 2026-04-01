@@ -1,4 +1,5 @@
 ﻿namespace tpSerialisation;
+using System.IO;
 
 class Program
 {
@@ -15,5 +16,6 @@ class Program
         gestionsJeux.addGame(g3);
 
         gestionsJeux.Afficher();
+        gestionsJeux.SauverCSV("C:\\Users\\lignaszewski\\Documents\\TP Orienté Objet\\tpSerialisation\\Jeux.csv");
     }
 }
