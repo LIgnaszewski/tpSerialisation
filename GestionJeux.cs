@@ -1,14 +1,11 @@
 using System.IO;
-class GestionJeux
+using System.Xml.Serialization;
+public class GestionJeux
 {
-    protected List<Jeuvideo> jeuvideos;
+    protected List<Jeuvideo> jeuvideos= new List<Jeuvideo>();
     
     public void addGame(Jeuvideo game)
     {
-        if (jeuvideos == null)
-        {
-            jeuvideos = new List<Jeuvideo>();
-        }
 
         jeuvideos.Add(game);
     }
@@ -52,4 +49,33 @@ class GestionJeux
         }
         writer.Close();
     }
+
+    public void ChargerCSV(string nomFichier)
+    {
+        jeuvideos.Clear();
+        if (File.Exists(nomFichier))
+        {
+            StreamReader reader = new StreamReader(nomFichier);
+            while (!reader.EndOfStream)
+        {
+        string ligne = reader.ReadLine();
+        string[] morceaux = ligne.Split(';');
+        Jeuvideo g = new Jeuvideo();
+        g.Titre = morceaux[0];
+        g.Studio = morceaux[1];
+        g.Prix = double.Parse(morceaux[2]);
+        jeuvideos.Add(g);
+        }
+        reader.Close();
+        }
+    }
+
+    public void SauverXml(string filePath)
+    {
+        XmlSerializer xs = new XmlSerializer(typeof(List<Jeuvideo>));
+        StreamWriter writer = new StreamWriter(filePath);
+        xs.Serialize(writer, jeuvideos);
+        writer.Close();
+    }
+    
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tpSerialisation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47a9590851d8ee5fe6ee04df0de60afe6c0f05df")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df0920dcfce3974a70fdf499f8c9959a6a5c7739")]
 [assembly: System.Reflection.AssemblyProductAttribute("tpSerialisation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tpSerialisation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

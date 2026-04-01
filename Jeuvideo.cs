@@ -1,5 +1,6 @@
 using System.IO;
-class Jeuvideo
+using System.Xml.Serialization;
+public class Jeuvideo
 {
     protected string titre;
     protected string studio;

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfJeuvideo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Jeuvideo>
+    <Titre>Fortnite</Titre>
+    <Studio>Epic</Studio>
+    <Prix>0</Prix>
+  </Jeuvideo>
+  <Jeuvideo>
+    <Titre>Valorant</Titre>
+    <Studio>Riot Games</Studio>
+    <Prix>0</Prix>
+  </Jeuvideo>
+  <Jeuvideo>
+    <Titre>Minecraft </Titre>
+    <Studio>Mojang </Studio>
+    <Prix>29.99</Prix>
+  </Jeuvideo>
+</ArrayOfJeuvideo>

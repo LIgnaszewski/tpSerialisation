@@ -1,5 +1,6 @@
 ﻿namespace tpSerialisation;
 using System.IO;
+using System.Xml.Serialization;
 
 class Program
 {
@@ -17,5 +18,10 @@ class Program
 
         gestionsJeux.Afficher();
         gestionsJeux.SauverCSV("C:\\Users\\lignaszewski\\Documents\\TP Orienté Objet\\tpSerialisation\\Jeux.csv");
+        gestionsJeux.ChargerCSV("C:\\Users\\lignaszewski\\Documents\\TP Orienté Objet\\tpSerialisation\\Jeux.csv");
+        Console.WriteLine("-----------------------| APRES LE CHARGEMENT CSV |------------------------");
+        gestionsJeux.Afficher();
+
+        gestionsJeux.SauverXml("C:\\Users\\lignaszewski\\Documents\\TP Orienté Objet\\tpSerialisation\\Jeux.xml");
     }
 }
