@@ -1,5 +1,7 @@
 using System.IO;
 using System.Xml.Serialization;
+using System.Text.Json;
+using System.Collections.Generic;
 public class GestionJeux
 {
     protected List<Jeuvideo> jeuvideos= new List<Jeuvideo>();
@@ -50,12 +52,12 @@ public class GestionJeux
         writer.Close();
     }
 
-    public void ChargerCSV(string nomFichier)
+    public void ChargerCSV(string filePath)
     {
         jeuvideos.Clear();
-        if (File.Exists(nomFichier))
+        if (File.Exists(filePath))
         {
-            StreamReader reader = new StreamReader(nomFichier);
+            StreamReader reader = new StreamReader(filePath);
             while (!reader.EndOfStream)
         {
         string ligne = reader.ReadLine();
@@ -86,7 +88,22 @@ public class GestionJeux
             StreamReader reader = new StreamReader(filePath);
             jeuvideos = (List<Jeuvideo>)xs.Deserialize(reader);
             reader.Close();
+        }
     }
+
+    public void SauverJson(string filePath)
+    {
+        string json = JsonSerializer.Serialize(jeuvideos);
+        File.WriteAllText(filePath, json);
+    }
+
+    public void ChargerJson(string filePath)
+    {
+        if (File.Exists(filePath))
+        {
+            string json = File.ReadAllText(filePath);
+            jeuvideos = JsonSerializer.Deserialize<List<Jeuvideo>>(json);
+        }
     }
     
 }

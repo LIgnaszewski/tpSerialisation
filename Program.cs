@@ -18,13 +18,19 @@ class Program
 
         gestionsJeux.Afficher();
         gestionsJeux.SauverCSV("C:\\Users\\lignaszewski\\Documents\\TP Orienté Objet\\tpSerialisation\\Jeux.csv");
+        gestionsJeux.SauverXml("C:\\Users\\lignaszewski\\Documents\\TP Orienté Objet\\tpSerialisation\\Jeux.xml");
+        gestionsJeux.SauverJson("C:\\Users\\lignaszewski\\Documents\\TP Orienté Objet\\tpSerialisation\\Jeux.json");
+
         gestionsJeux.ChargerCSV("C:\\Users\\lignaszewski\\Documents\\TP Orienté Objet\\tpSerialisation\\Jeux.csv");
         Console.WriteLine("-----------------------| APRES LE CHARGEMENT CSV |------------------------");
         gestionsJeux.Afficher();
 
-        gestionsJeux.SauverXml("C:\\Users\\lignaszewski\\Documents\\TP Orienté Objet\\tpSerialisation\\Jeux.xml");
         gestionsJeux.ChargerXml("C:\\Users\\lignaszewski\\Documents\\TP Orienté Objet\\tpSerialisation\\Jeux.xml");
         Console.WriteLine("-----------------------| APRES LE CHARGEMENT XML |------------------------");
+        gestionsJeux.Afficher();
+        
+        gestionsJeux.ChargerJson("C:\\Users\\lignaszewski\\Documents\\TP Orienté Objet\\tpSerialisation\\Jeux.json");
+        Console.WriteLine("-----------------------| APRES LE CHARGEMENT JSON |------------------------");
         gestionsJeux.Afficher();
     }
 }
